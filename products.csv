@@ -1,13 +1,101 @@
 SKU|Product Name|Price|Department
-AV1051|JBL Bluetooth Speaker|89.95|Audio Video
-AV1312|Mini 1000 Lumens Projector|149.95|Audio Video
-AV1412|XLR Podcast Cardiod Mic|44.99|Audio Video
-CP2012|Desktop PC Computer Intel Core i5|139.00|Computers
-CP2123|Wired Backlit Keyboard|21.99|Computers
-CP2154|RGB Wireless Gaming Mouse|67.45|Computers
-GM1032|Telestrations Board Game|17.99|Games
-GM1075|Battleship Board Game|12.99|Games
-GM1148|Retro Handheld Arcade|24.45|Games
-PW1255|USB C to A Cable|13.95|Electronics
-PW1341|Solar Powered Battery Charger|19.99|Electronics
-PW1431|Wireless Charger iPhone|12.99|Electronics
+SKU001|Wireless Mouse|19.99|Electronics
+SKU002|Bluetooth Keyboard|29.99|Electronics
+SKU003|USB-C Cable|9.99|Electronics
+SKU004|Laptop Stand|34.99|Electronics
+SKU005|Noise Cancelling Headphones|89.99|Electronics
+SKU006|Smartphone Charger|14.99|Electronics
+SKU007|LED Monitor 24 inch|129.99|Electronics
+SKU008|External Hard Drive 1TB|59.99|Electronics
+SKU009|Webcam HD|39.99|Electronics
+SKU010|Gaming Mouse Pad|12.99|Electronics
+SKU011|Office Chair|149.99|Furniture
+SKU012|Standing Desk|299.99|Furniture
+SKU013|Bookshelf 5 Tier|89.99|Furniture
+SKU014|Desk Lamp|24.99|Furniture
+SKU015|Coffee Table|119.99|Furniture
+SKU016|Sofa 3-Seater|499.99|Furniture
+SKU017|Dining Table Set|399.99|Furniture
+SKU018|Wardrobe Closet|259.99|Furniture
+SKU019|TV Stand|139.99|Furniture
+SKU020|Recliner Chair|199.99|Furniture
+SKU021|Men's T-Shirt|14.99|Clothing
+SKU022|Women's Jeans|39.99|Clothing
+SKU023|Sneakers|59.99|Clothing
+SKU024|Jacket Winter|79.99|Clothing
+SKU025|Baseball Cap|12.99|Clothing
+SKU026|Socks Pack of 5|9.99|Clothing
+SKU027|Formal Shirt|29.99|Clothing
+SKU028|Running Shorts|19.99|Clothing
+SKU029|Hoodie Sweatshirt|34.99|Clothing
+SKU030|Leather Belt|24.99|Clothing
+SKU031|Blender|49.99|Home Appliances
+SKU032|Microwave Oven|99.99|Home Appliances
+SKU033|Air Fryer|89.99|Home Appliances
+SKU034|Vacuum Cleaner|129.99|Home Appliances
+SKU035|Toaster 2-Slice|24.99|Home Appliances
+SKU036|Coffee Maker|59.99|Home Appliances
+SKU037|Electric Kettle|29.99|Home Appliances
+SKU038|Refrigerator Mini|199.99|Home Appliances
+SKU039|Washing Machine|499.99|Home Appliances
+SKU040|Dishwasher|399.99|Home Appliances
+SKU041|Notebook A5|4.99|Stationery
+SKU042|Ballpoint Pens Pack|6.99|Stationery
+SKU043|Desk Organizer|14.99|Stationery
+SKU044|Stapler|9.99|Stationery
+SKU045|Printer Paper 500 Sheets|7.99|Stationery
+SKU046|Highlighters Set|5.99|Stationery
+SKU047|Sticky Notes Pack|3.99|Stationery
+SKU048|Whiteboard Marker|4.99|Stationery
+SKU049|File Folder Set|8.99|Stationery
+SKU050|Calculator|12.99|Stationery
+SKU051|Shampoo 500ml|7.99|Personal Care
+SKU052|Conditioner 500ml|7.99|Personal Care
+SKU053|Body Wash|6.99|Personal Care
+SKU054|Toothpaste|3.99|Personal Care
+SKU055|Hair Dryer|24.99|Personal Care
+SKU056|Electric Toothbrush|39.99|Personal Care
+SKU057|Face Cream|14.99|Personal Care
+SKU058|Hand Sanitizer|2.99|Personal Care
+SKU059|Razor Kit|9.99|Personal Care
+SKU060|Perfume Spray|29.99|Personal Care
+SKU061|Dog Food 5kg|24.99|Pet Supplies
+SKU062|Cat Litter 10kg|19.99|Pet Supplies
+SKU063|Pet Toy Ball|4.99|Pet Supplies
+SKU064|Dog Leash|12.99|Pet Supplies
+SKU065|Cat Scratching Post|29.99|Pet Supplies
+SKU066|Pet Bed|34.99|Pet Supplies
+SKU067|Aquarium Tank|59.99|Pet Supplies
+SKU068|Bird Cage|49.99|Pet Supplies
+SKU069|Fish Food|6.99|Pet Supplies
+SKU070|Pet Grooming Kit|19.99|Pet Supplies
+SKU071|Basketball|19.99|Sports
+SKU072|Football|21.99|Sports
+SKU073|Tennis Racket|59.99|Sports
+SKU074|Yoga Mat|14.99|Sports
+SKU075|Dumbbell Set|49.99|Sports
+SKU076|Running Shoes|69.99|Sports
+SKU077|Cycling Helmet|39.99|Sports
+SKU078|Jump Rope|9.99|Sports
+SKU079|Camping Tent|99.99|Sports
+SKU080|Sleeping Bag|49.99|Sports
+SKU081|Novel Book|12.99|Books
+SKU082|Science Textbook|59.99|Books
+SKU083|Children Story Book|8.99|Books
+SKU084|Notebook Journal|9.99|Books
+SKU085|Cookbook|24.99|Books
+SKU086|History Book|19.99|Books
+SKU087|Comics Volume 1|14.99|Books
+SKU088|Art Sketchbook|11.99|Books
+SKU089|Dictionary|29.99|Books
+SKU090|Language Learning Book|34.99|Books
+SKU091|Chocolate Box|14.99|Food
+SKU092|Organic Honey|9.99|Food
+SKU093|Olive Oil 1L|12.99|Food
+SKU094|Pasta Pack|3.99|Food
+SKU095|Coffee Beans 500g|11.99|Food
+SKU096|Green Tea Pack|6.99|Food
+SKU097|Snack Chips|2.99|Food
+SKU098|Breakfast Cereal|5.99|Food
+SKU099|Energy Drink|2.49|Food
+SKU100|Bottled Water Pack|4.99|Food
