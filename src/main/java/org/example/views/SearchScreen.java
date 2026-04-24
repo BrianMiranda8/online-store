@@ -43,7 +43,11 @@ public class SearchScreen {
 
     // this is gross ik
     private static void searchViaDepartment( List<Product> products) {
-       HashSet<String> departments = new HashSet<>();
+        IO.println();
+        IO.println();
+        IO.println("=================== Search Via Department =======================");
+
+        HashSet<String> departments = new HashSet<>();
 
        for (Product product : products){
            if (!departments.contains(product.getDepartment().toLowerCase())){
@@ -51,28 +55,59 @@ public class SearchScreen {
            }
        }
 
+
+       for (String department: departments){
+           IO.print(department.toUpperCase() +  ", ");
+       }
+        IO.println("Available Departments: ");
+        IO.print("Enter Search: ");
+        String userInput = UI.getUserInput();
+
+        for (Product product : products) {
+            if (product.getDepartment().toLowerCase().contains(userInput)) {
+                searchedProducts.add(product);
+            }
+        }
+
+
+        if (searchedProducts.isEmpty())
+            IO.println("No items found");
+        else
+            for (Product product : searchedProducts){
+                IO.println(product);
+            }
+
+
+        IO.println(searchedProducts.size()+" Items Found With \""+ userInput + "\" ");
+
+        searchedProducts.clear();
+
         IO.println();
-
-
+        IO.println("Press Enter To Continue: ");
+        UI.getUserInput();
     }
 
     private static void searchViaName( List<Product> products ) {
+        IO.println("-------------- Name Search ----------------");
+        IO.println();
         IO.print("Type Your Search: ");
         String userInput = UI.getUserInput();
+
         for (Product product : products) {
             if (product.getName().toLowerCase().contains(userInput)) {
                 searchedProducts.add(product);
             }
         }
 
-        IO.println("-------------- Name Search ----------------");
-        if (searchedProducts.isEmpty()){
+
+        if (searchedProducts.isEmpty())
             IO.println("No items found");
-        }else {
+        else
             for (Product product : searchedProducts){
                 IO.println(product);
             }
-        }
+
+
         IO.println(searchedProducts.size()+" Items Found With \""+ userInput + "\" ");
         IO.println("Press enter to continue");
         searchedProducts.clear();
