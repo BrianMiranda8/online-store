@@ -46,7 +46,12 @@ public class CSVProudctRepository implements ProductRepository{
 
     @Override
     public Product getProductBySku(String sku) {
-        return null;
+        for (Product product : products){
+            if (product.getSKU().equals(sku.toUpperCase())){
+                return product;
+            }
+        }
+        return  null;
     }
 
     @Override
