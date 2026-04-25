@@ -12,12 +12,12 @@ import java.util.List;
  * I’ve come to realize that this class is problematic.
  * If it weren't static, I could reuse it for a wishlist, a save-for-later cart, or other cart types;
  * however, because it uses a static array to hold items, I’m locked into a single instance.
- * <p>
+ *
  * A better approach would be to pass the cart instance from screen to screen—a concept known as
  * 'Dependency Injection.' I initially hesitated to do this because
  * I thought it might be difficult to track where the cart object originated,
  * but I’ve realized that a static class isn't any easier to manage in the long run.
- * <p>
+ *
  * This approach is easier for this project because static arrays stay in memory until the end of the program which
  * means I can jump from window to window without worrying about the cart
  *
@@ -106,7 +106,7 @@ public class Cart {
             CartItem cartItem = cartItems.get(i);
             // we have more than 1 item lets not remove item from list
             // lets just reduce its quantity
-            if (cartItem.getSku().equals(sku)) {
+            if (cartItem.getSku().equalsIgnoreCase(sku)) {
                 cartItem.setQuantity(cartItem.getQuantity() - quantity);
                if (cartItem.getQuantity() < 1) {
                     cartItems.remove(i);
@@ -114,6 +114,7 @@ public class Cart {
                 return;
             }
         }
+        throw new CartItemNotFound("sku does not exist in cart");
     }
     static public double totalCart() {
         double grandTotal = 0;
@@ -123,7 +124,9 @@ public class Cart {
         }
         return grandTotal;
     }
-
+    static public void clearCart(){
+        cartItems.clear();
+    }
     public static List<CartItem> viewCart() {
         return cartItems;
     }

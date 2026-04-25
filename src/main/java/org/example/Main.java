@@ -9,21 +9,19 @@ import org.example.views.ViewProducts;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     static void main() {
-
-            while (true) {
+            boolean isLooping = true;
+            while (isLooping) {
 
                 String userOption = HomeScreen.getScreen();
 
                 switch (userOption) {
-                    case "1":
-                        ViewProducts.getScreen();
-                        break;
-                    case "2":
-                        ViewCartScreen.getScreen();
-                    break;
-                    default:
-                        IO.println("Goodbye !");
-                        break;
+                    case "1" -> ViewProducts.getScreen();
+
+                    case "2" -> ViewCartScreen.getScreen();
+
+                    case "3" -> isLooping = false;
+                    default -> IO.println("Invalid Input !");
+
                 }
             }
     }

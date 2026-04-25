@@ -39,6 +39,36 @@ public class SearchScreen {
     }
 
     private static void searchViaPrice( List<Product> products) {
+        IO.println("-------------- Price Search ----------------");
+        IO.println();
+        IO.print("Type Your Search: ");
+        String userInput = UI.getUserInput();
+
+        try{
+
+        for (Product product : products) {
+            if (product.getPrice() <= Double.parseDouble(userInput)) {
+                searchedProducts.add(product);
+            }
+        }
+
+
+        if (searchedProducts.isEmpty())
+            IO.println("No items found");
+        else
+            for (Product product : searchedProducts){
+                IO.println(product);
+            }
+
+
+        IO.println(searchedProducts.size()+" Items Found @ or less than \"$"+ userInput + "\" ");
+        IO.println("Press enter to continue");
+        searchedProducts.clear();
+        UI.getUserInput();
+        } catch (NumberFormatException e) {
+            IO.println("Enter valid number");
+        }
+
     }
 
     // this is gross ik

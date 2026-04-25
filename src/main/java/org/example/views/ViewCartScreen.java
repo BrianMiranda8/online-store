@@ -10,6 +10,15 @@ public class ViewCartScreen {
         boolean isLooping = true;
 
         while (isLooping ){
+            if (Cart.viewCart().isEmpty()){
+                IO.println("No items in cart");
+                IO.println("buy something to continue");
+
+                isLooping = false;
+                continue;
+
+
+            }
             displayCartContent();
             IO.println("1) Check Out \n" +
                     "2) Remove Product \n" +
